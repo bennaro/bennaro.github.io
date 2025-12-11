@@ -3,98 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Mouse Support & Privacy</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>PhoneMouse - Support & Privacy</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-lava.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 60px 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .back-link {
+            margin-bottom: 30px;
+        }
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .back-link a:hover {
+            color: #764ba2;
+        }
+        .app-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .app-header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .app-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+        }
+        .app-header p {
+            font-size: 1.1rem;
+            color: #6e6e73;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f5f5f7;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p, li {
+            color: #6e6e73;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        ol, ul {
+            padding-left: 25px;
+            margin-bottom: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight-box {
+            background: #f5f5f7;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+        @media (max-width: 768px) {
+            .content-wrapper {
+                padding: 40px 30px;
+            }
+            .app-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Phone Mouse Support & Privacy</h1>
+    <div class="content-wrapper">
+        <div class="back-link">
+            <a href="/">← Back to Home</a>
+        </div>
 
-    <p>Welcome to the support and privacy page for Phone Mouse. Below you'll find relevant information regarding how to get help, as well as how we handle your data responsibly.</p>
+        <div class="app-header">
+            <img src="../assets/images/phonemouse-icon.png" alt="PhoneMouse">
+            <h1>PhoneMouse</h1>
+            <p>Turn your iPhone into a wireless mouse and keyboard for your Mac</p>
+        </div>
 
-    <h2>Getting Started</h2>
-    <p><strong>Setup is simple:</strong></p>
-    <ol>
-        <li>Install Phone Mouse on both your iPhone and Mac</li>
-        <li>Make sure both devices are on the same WiFi network</li>
-        <li>Open the app on your Mac first (it will appear in your menu bar)</li>
-        <li>Open the app on your iPhone</li>
-        <li>Tap your Mac's name to connect</li>
-        <li>Start moving your cursor!</li>
-    </ol>
+        <h2>Getting Started</h2>
+        <p><strong>Setup is simple:</strong></p>
+        <ol>
+            <li>Install PhoneMouse on both your iPhone and Mac</li>
+            <li>Make sure both devices are on the same WiFi network</li>
+            <li>Open the app on your Mac first (it will appear in your menu bar)</li>
+            <li>Open the app on your iPhone</li>
+            <li>Tap your Mac's name to connect</li>
+            <li>Start moving your cursor!</li>
+        </ol>
 
-    <h2>Two Control Modes</h2>
-    <p><strong>Gyro Mode:</strong> Move your phone in the air like a magic wand to control the cursor. Best for presentations and pointing from across the room (hold phone upright).</p>
-    <p><strong>Trackpad Mode:</strong> Use your phone's screen as a wireless trackpad. Best for precise control and close-range use (hold phone horizontally).</p>
+        <h2>Two Control Modes</h2>
+        <div class="highlight-box">
+            <p><strong>Gyro Mode:</strong> Move your phone in the air like a magic wand to control the cursor. Best for presentations and pointing from across the room (hold phone upright).</p>
+            <p style="margin-bottom: 0;"><strong>Trackpad Mode:</strong> Use your phone's screen as a wireless trackpad. Best for precise control and close-range use (hold phone horizontally).</p>
+        </div>
 
-    <h2>Common Issues</h2>
-    <p><strong>Can't see my Mac in the iPhone app?</strong></p>
-    <ul>
-        <li>Ensure both devices are on the same WiFi network</li>
-        <li>Check that the Mac app is running (look for the mouse icon in your menu bar)</li>
-        <li>Try closing and reopening both apps</li>
-        <li>Restart your WiFi router if needed</li>
-    </ul>
+        <h2>Common Issues</h2>
+        <h3>Can't see my Mac in the iPhone app?</h3>
+        <ul>
+            <li>Ensure both devices are on the same WiFi network</li>
+            <li>Check that the Mac app is running (look for the mouse icon in your menu bar)</li>
+            <li>Try closing and reopening both apps</li>
+            <li>Restart your WiFi router if needed</li>
+        </ul>
 
-    <p><strong>Connection keeps dropping?</strong></p>
-    <ul>
-        <li>Move closer to your WiFi router</li>
-        <li>Check that your Mac isn't going to sleep</li>
-        <li>Ensure "Low Power Mode" is off on your iPhone</li>
-    </ul>
+        <h3>Connection keeps dropping?</h3>
+        <ul>
+            <li>Move closer to your WiFi router</li>
+            <li>Check that your Mac isn't going to sleep</li>
+            <li>Ensure "Low Power Mode" is off on your iPhone</li>
+        </ul>
 
-    <h2>System Requirements</h2>
-    <p><strong>iPhone/iPad:</strong> iOS 18.0 or later, iPhone 6s or newer</p>
-    <p><strong>Mac:</strong> macOS 15.0 or later, Apple Silicon or Intel processor</p>
+        <h2>System Requirements</h2>
+        <p><strong>iPhone/iPad:</strong> iOS 18.0 or later, iPhone 6s or newer</p>
+        <p><strong>Mac:</strong> macOS 15.0 or later, Apple Silicon or Intel processor</p>
 
-    <h2>Support</h2>
-    <p>If you have any questions, feedback, or encounter an issue while using the app, feel free to reach out:</p>
-    <p>📧 Email: <a href="mailto:contact.phonemouse@gmail.com">contact.phonemouse@gmail.com</a></p>
-    <p><strong>Response Time:</strong> We typically respond within 24-48 hours.</p>
+        <h2>Support</h2>
+        <p>If you have any questions, feedback, or encounter an issue while using the app, feel free to reach out:</p>
+        <p>📧 Email: <a href="mailto:contact.phonemouse@gmail.com">contact.phonemouse@gmail.com</a></p>
+        <p><strong>Response Time:</strong> We typically respond within 24-48 hours.</p>
 
-    <h2>Privacy</h2>
-    <p><strong>We collect ZERO data.</strong></p>
+        <h2>Privacy</h2>
+        <div class="highlight-box">
+            <p><strong>We collect ZERO data.</strong></p>
+            <p style="margin-bottom: 0;">PhoneMouse does not collect, store, or transmit any personal data. Everything happens locally between your devices.</p>
+        </div>
 
-    <p>Phone Mouse does not:</p>
-    <ul>
-        <li>Collect any personal information</li>
-        <li>Track your usage or behavior</li>
-        <li>Store any data on external servers</li>
-        <li>Require you to create an account</li>
-        <li>Use analytics or tracking tools</li>
-        <li>Share data with third parties</li>
-        <li>Display advertisements</li>
-    </ul>
+        <p>PhoneMouse does not:</p>
+        <ul>
+            <li>Collect any personal information</li>
+            <li>Track your usage or behavior</li>
+            <li>Store any data on external servers</li>
+            <li>Require you to create an account</li>
+            <li>Use analytics or tracking tools</li>
+            <li>Share data with third parties</li>
+            <li>Display advertisements</li>
+        </ul>
 
-    <h3>How Phone Mouse Works</h3>
-    <p>Phone Mouse operates entirely on your local network:</p>
-    <ul>
-        <li>Your iPhone and Mac connect directly to each other</li>
-        <li>All communication happens between your devices only</li>
-        <li>No data ever leaves your local network</li>
-        <li>No internet connection is required (after download)</li>
-    </ul>
+        <h3>How PhoneMouse Works</h3>
+        <p>PhoneMouse operates entirely on your local network:</p>
+        <ul>
+            <li>Your iPhone and Mac connect directly to each other</li>
+            <li>All communication happens between your devices only</li>
+            <li>No data ever leaves your local network</li>
+            <li>No internet connection is required (after download)</li>
+        </ul>
 
-    <h3>Permissions</h3>
-    <p>Phone Mouse requests the following permissions:</p>
-    <p><strong>Motion & Orientation:</strong> To use your phone's gyroscope for cursor control in Gyro Mode</p>
-    <p><strong>Local Network Access:</strong> To connect your iPhone to your Mac over WiFi or Bluetooth</p>
-    <p>These permissions are used solely for the app's functionality. No data from these sensors is ever stored or transmitted outside your devices.</p>
+        <h3>Permissions</h3>
+        <p>PhoneMouse requests the following permissions:</p>
+        <p><strong>Motion & Orientation:</strong> To use your phone's gyroscope for cursor control in Gyro Mode</p>
+        <p><strong>Local Network Access:</strong> To connect your iPhone to your Mac over WiFi or Bluetooth</p>
+        <p>These permissions are used solely for the app's functionality. No data from these sensors is ever stored or transmitted outside your devices.</p>
 
-    <h2>FAQ</h2>
-    <p><strong>What does Phone Mouse cost?</strong><br>
-    Phone Mouse is a one-time purchase with no subscriptions, no in-app purchases, and no ads.</p>
+        <h2>FAQ</h2>
+        <p><strong>What does PhoneMouse cost?</strong><br>
+        PhoneMouse is a one-time purchase with no subscriptions, no in-app purchases, and no ads.</p>
 
-    <p><strong>Do I need internet?</strong><br>
-    No. Phone Mouse works entirely over your local network. No internet required after download.</p>
+        <p><strong>Do I need internet?</strong><br>
+        No. PhoneMouse works entirely over your local network. No internet required after download.</p>
 
-    <p><strong>Does it work with iPad?</strong><br>
-    Yes! Phone Mouse works on iPhone, iPad, and Mac.</p>
+        <p><strong>Does it work with iPad?</strong><br>
+        Yes! PhoneMouse works on iPhone, iPad, and Mac.</p>
 
-    <p><strong>Is my data safe?</strong><br>
-    Yes. Phone Mouse doesn't collect, store, or transmit any personal data. Everything happens locally between your devices.</p>
+        <p><strong>Is my data safe?</strong><br>
+        Yes. PhoneMouse doesn't collect, store, or transmit any personal data. Everything happens locally between your devices.</p>
 
-    <p>If you have any concerns regarding privacy or support, feel free to contact us at <a href="mailto:contact.phonemouse@gmail.com">contact.phonemouse@gmail.com</a>.</p>
+        <p>If you have any concerns regarding privacy or support, feel free to contact us at <a href="mailto:contact.phonemouse@gmail.com">contact.phonemouse@gmail.com</a>.</p>
 
-    <p><em>Last Updated: December 2024</em></p>
+        <p style="text-align: center; margin-top: 50px; opacity: 0.6;"><em>Last Updated: December 2024</em></p>
+    </div>
 </body>
 </html>
