@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TxtMaker - Paste anything as a file</title>
+    <meta name="description" content="TxtMaker for Mac: copy anything and paste it as a Markdown, text, PDF or HTML file. Made for sending AI context and documents.">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-lava.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0B8A3E 0%, #04501F 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 60px 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .back-link {
+            margin-bottom: 30px;
+        }
+        .back-link a {
+            color: #00702B;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .back-link a:hover {
+            color: #04501F;
+        }
+        .app-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .app-header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .app-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+        }
+        .app-header p {
+            font-size: 1.1rem;
+            color: #6e6e73;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f5f5f7;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p, li {
+            color: #6e6e73;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        ol, ul {
+            padding-left: 25px;
+            margin-bottom: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+        a {
+            color: #00702B;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight-box {
+            background: #f5f5f7;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+        @media (max-width: 768px) {
+            .content-wrapper {
+                padding: 40px 30px;
+            }
+            .app-header h1 {
+                font-size: 2rem;
+            }
+        }
+            .download {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 14px 30px;
+            border-radius: 12px;
+            background: #1d1d1f;
+            color: #fff !important;
+            font-weight: 600;
+            font-size: 1.05rem;
+            text-decoration: none !important;
+        }
+        .download:hover { background: #000; }
+        .download small { display: block; font-weight: 400; font-size: .8rem; opacity: .75; }
+        .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 25px 0; }
+        .step { background: #f5f5f7; border-radius: 12px; padding: 20px; }
+        .step strong { display: block; margin-bottom: 6px; }
+        .step p { margin: 0; }
+        kbd { background: #fff; border: 1px solid #d2d2d7; border-bottom-width: 2px; border-radius: 5px; padding: 1px 6px; font-size: .9em; color: #1d1d1f; }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="back-link">
+            <a href="/">← Back to Home</a>
+        </div>
+
+        <div class="app-header">
+            <img src="../assets/images/txtmaker-icon.png" alt="TxtMaker">
+            <h1>TxtMaker</h1>
+            <p>Copy anything. Paste it as a Markdown, text, PDF or HTML file.</p>
+            <!-- When TxtMaker is live: href="https://apps.apple.com/app/id<Apple ID>" and the text "Download on the Mac App Store". -->
+            <a class="download" id="download" href="#privacy">
+                Coming soon to the Mac App Store<small>Free · macOS 13 or later</small>
+            </a>
+        </div>
+
+        <h2>One click from clipboard to file</h2>
+        <div class="steps">
+            <div class="step"><strong>1. Copy</strong><p>An AI's answer, part of a web page, a document, a screenshot.</p></div>
+            <div class="step"><strong>2. Click</strong><p>The TxtMaker icon in the menu bar, or press <kbd>⌃</kbd><kbd>⌥</kbd><kbd>V</kbd> in any app.</p></div>
+            <div class="step"><strong>3. Paste</strong><p>The file is in Downloads and on your clipboard. <kbd>⌘</kbd><kbd>V</kbd> attaches it in Slack, Teams, Mail or an AI chat.</p></div>
+        </div>
+
+        <h2>Why</h2>
+        <p>Many apps won't send or open <strong>.md</strong> files, and long text pasted into a chat gets cut or loses its formatting. TxtMaker gives you the format that works: <strong>PDF</strong> for people, <strong>Markdown</strong> or <strong>text</strong> for an AI, <strong>HTML</strong> for anything with a browser.</p>
+
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Your favourite format, instantly.</strong> Tick several formats and a quick menu asks which.</li>
+            <li><strong>Right-click the Dock icon</strong> for every format.</li>
+            <li><strong>Drop files</strong> on the icon or window: PDF, Word, PowerPoint, HTML, RTF, subtitles (.srt, .vtt) and screenshots.</li>
+            <li><strong>Compact for AI:</strong> page numbers, padding, timestamps and broken lines go. Fewer tokens, same content. Every file shows roughly how many tokens it is.</li>
+            <li><strong>Reads scans:</strong> scanned PDFs and screenshots are read with text recognition, on your Mac.</li>
+            <li>English and Norwegian.</li>
+        </ul>
+
+        <h2>Common Questions</h2>
+        <h3>Where do the files go?</h3>
+        <p>To your Downloads folder. Turn on <em>Show in Finder afterwards</em> in TxtMaker's window if you want to see each one.</p>
+        <h3>The shortcut doesn't work</h3>
+        <p>Another app may use <kbd>⌃</kbd><kbd>⌥</kbd><kbd>V</kbd>. Quit that app, or use the menu bar icon. The shortcut can be turned off in TxtMaker's window.</p>
+        <h3>A PDF gives no text</h3>
+        <p>Very low-quality scans may not be readable. Try a clearer scan or a screenshot of the page.</p>
+
+        <h2>Support</h2>
+        <p>Questions, feedback or a problem? Write to:</p>
+        <p>📧 Email: <a href="mailto:bennaro1@gmail.com">bennaro1@gmail.com</a></p>
+        <p><strong>Response time:</strong> usually within 24–48 hours.</p>
+
+        <h2 id="privacy">Privacy</h2>
+        <div class="highlight-box">
+            <p><strong>TxtMaker collects no data.</strong></p>
+            <p style="margin-bottom: 0;">Everything you copy or drop is converted on your Mac. Nothing is uploaded, and TxtMaker never connects to the internet.</p>
+        </div>
+        <p>TxtMaker does not:</p>
+        <ul>
+            <li>Collect any personal information</li>
+            <li>Read your clipboard except when you click the icon, press the shortcut or choose Paste</li>
+            <li>Track your usage or use analytics</li>
+            <li>Require an account</li>
+            <li>Share data with third parties</li>
+        </ul>
+        <h3>Permissions</h3>
+        <p><strong>Downloads folder:</strong> to save the files it makes. <strong>Files you choose or drop:</strong> to read them. That's all.</p>
+
+        <p style="text-align: center; margin-top: 50px; opacity: 0.6;"><em>Last updated: November 2026</em></p>
+    </div>
+</body>
+</html>
